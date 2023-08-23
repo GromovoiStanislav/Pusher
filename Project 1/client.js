@@ -49,6 +49,11 @@ const events = [
     name: 'test-event-2',
     data: { message: 'hello another world' },
   },
+  {
+    channel: 'channel-2',
+    name: 'test-event-1',
+    data: { message: 'hello world' },
+  },
 ];
 await Publisher.triggerBatch(events);
 //console.log(res.json());

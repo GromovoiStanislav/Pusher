@@ -4,8 +4,10 @@
   "description": "",
   "type": "module",
   "scripts": {
+    "start:client": "node client",
     "start:server": "node server",
-    "start:client": "node client"
+    "start:svc1": "node svc1",
+    "start:svc2": "node svc2"
   },
   "keywords": [],
   "author": "",
