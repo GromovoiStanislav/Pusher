@@ -1,0 +1,18 @@
+{
+  "name": "pusher",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start:client": "node client",
+    "start:server": "node server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "pusher": "^5.1.3",
+    "pusher-js": "^8.3.0"
+  }
+}
