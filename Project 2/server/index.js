@@ -21,7 +21,6 @@ channel.bind('message/add', (data) => {
 
 channel.bind('message/delete', (data) => {
   const index = messages.findIndex((message) => message.id === data);
-  console.log(index);
   if (index !== -1) {
     messages.splice(index, 1);
   }

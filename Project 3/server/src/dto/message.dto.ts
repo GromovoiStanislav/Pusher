@@ -1,6 +1,10 @@
 import { IsString,IsNotEmpty } from "class-validator";
 
-export class CreateMessageDto {
+export class MessageDto {
+  @IsNotEmpty()
+  @IsString()
+  id: string;
+
   @IsNotEmpty()
   @IsString()
   username: string;
