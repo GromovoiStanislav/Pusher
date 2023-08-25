@@ -4,7 +4,10 @@ import { ConfigService } from "@nestjs/config";
 
 @Injectable()
 export class PusherService {
-  pusher: any;
+  private pusher: any;
+
+  //private channelMap: { [key: string]: any } = {};
+  private channelMap:  Record<string, any> = {};
 
   constructor(private configService: ConfigService) {
     // @ts-ignore
@@ -13,8 +16,18 @@ export class PusherService {
     });
   }
 
+  private createChannel(channel: string) {
+    const channelInstance = this.pusher.subscribe(channel);
+    this.channelMap[channel] = channelInstance;
+    return channelInstance;
+  }
+
   getChannel(channel: string) {
-    return this.pusher.subscribe(channel);
+    if (this.channelMap.hasOwnProperty(channel)) {
+      return this.channelMap[channel];
+    } else {
+      return this.createChannel(channel);
+    }
   }
 
 }
