@@ -1,0 +1,17 @@
+{
+  "name": "pusher-server",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "pusher": "^5.1.3"
+  }
+}
