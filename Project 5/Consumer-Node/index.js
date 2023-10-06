@@ -1,8 +1,8 @@
 import 'dotenv/config';
 import Pusher from 'pusher-js';
 
-const pusher = new Pusher(process.env.APP_KEY, {
-  cluster: process.env.APP_CLUSTER,
+const pusher = new Pusher(process.env.PUSHER_KEY, {
+  cluster: process.env.PUSHER_CLUSTER,
   encrypted: true,
 });
 

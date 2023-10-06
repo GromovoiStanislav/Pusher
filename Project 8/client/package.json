@@ -1,0 +1,22 @@
+{
+  "name": "pusher",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "vite build",
+    "build": "vite preview",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "pusher-js": "^8.3.0"
+  },
+  "devDependencies": {
+    "vite": "^4.4.7"
+  }
+}

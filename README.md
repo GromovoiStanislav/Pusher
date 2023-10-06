@@ -8,3 +8,4 @@
 - 5 - Pusher example (GO & JS)
 - 6 - Pusher example (Python & JS)
 - 7 - Realtime chat with Pusher (GO)
+- 8 - Realtime chat with Pusher (Python)

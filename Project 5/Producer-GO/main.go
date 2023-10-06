@@ -17,10 +17,10 @@ func main() {
 	}
 
 	pusherClient := pusher.Client{
-		AppID:   os.Getenv("APP_ID"),
-		Key:     os.Getenv("APP_KEY"),
-		Secret:  os.Getenv("APP_SECRET"),
-		Cluster: os.Getenv("APP_CLUSTER"),
+		AppID:   os.Getenv("PUSHER_ID"),
+		Key:     os.Getenv("PUSHER_KEY"),
+		Secret:  os.Getenv("PUSHER_SECRET"),
+		Cluster: os.Getenv("PUSHER_CLUSTER"),
 	}
 
 	reader := bufio.NewReader(os.Stdin)

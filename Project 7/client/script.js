@@ -6,8 +6,8 @@ const userInput = document.getElementById('username');
 
 const messageContainer = document.getElementById('message-container');
 
-const pusher = new Pusher('APP_KEY', {
-  cluster: 'APP_CLUSTER',
+const pusher = new Pusher('PUSHER_KEY', {
+  cluster: 'PUSHER_CLUSTER',
 });
 
 const channel = pusher.subscribe('chat');
